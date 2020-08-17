@@ -1,0 +1,16 @@
+{
+  "TestData": [
+    {
+      "Url": "/BookStore/v1/Books",
+      "Verb": "post",
+      "Data": {
+        "userId": "cd9c1a56-8e57-4353-a9fe-2c56902342ba",
+        "collectionOfIsbns": [
+          {
+            "isbn": "9781449337711"
+          }
+        ]
+      }
+    }
+  ]
+}

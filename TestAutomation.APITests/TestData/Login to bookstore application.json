@@ -1,0 +1,115 @@
+{
+  "TestData": [
+    {
+      "Url": "/Account/v1/Login",
+      "Verb": "post",
+      "Data": {
+        "userName": "Captain America",
+        "password": "MyP@ss123"
+      }
+    }
+  ],
+  "Schema": [
+    {
+      "$schema": "http://json-schema.org/draft-07/schema",
+      "$id": "http://example.com/example.json",
+      "type": "object",
+      "title": "The root schema",
+      "description": "The root schema comprises the entire JSON document.",
+      "default": {},
+      "examples": [
+        {
+          "userId": "cd9c1a56-8e57-4353-a9fe-2c56902342ba",
+          "username": "Captain America",
+          "password": "MyP@ss123",
+          "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkNhcHRhaW4gQW1lcmljYSIsInBhc3N3b3JkIjoiTXlQQHNzMTIzIiwiaWF0IjoxNTk3NDYzOTgzfQ.YRJx4URj6TLqN2yijQE2Nzg-33vfdo3HRz3idWqQ9R4",
+          "expires": "2020-08-22T03:59:43.000Z",
+          "created_date": "2020-08-11T06:54:12.000Z",
+          "isActive": false
+        }
+      ],
+      "required": [
+        "userId",
+        "username",
+        "password",
+        "token",
+        "expires",
+        "created_date",
+        "isActive"
+      ],
+      "properties": {
+        "userId": {
+          "$id": "#/properties/userId",
+          "type": "string",
+          "title": "The userId schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "cd9c1a56-8e57-4353-a9fe-2c56902342ba"
+          ]
+        },
+        "username": {
+          "$id": "#/properties/username",
+          "type": "string",
+          "title": "The username schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "Captain America"
+          ]
+        },
+        "password": {
+          "$id": "#/properties/password",
+          "type": "string",
+          "title": "The password schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "MyP@ss123"
+          ]
+        },
+        "token": {
+          "$id": "#/properties/token",
+          "type": "string",
+          "title": "The token schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkNhcHRhaW4gQW1lcmljYSIsInBhc3N3b3JkIjoiTXlQQHNzMTIzIiwiaWF0IjoxNTk3NDYzOTgzfQ.YRJx4URj6TLqN2yijQE2Nzg-33vfdo3HRz3idWqQ9R4"
+          ]
+        },
+        "expires": {
+          "$id": "#/properties/expires",
+          "type": "string",
+          "title": "The expires schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "2020-08-22T03:59:43.000Z"
+          ]
+        },
+        "created_date": {
+          "$id": "#/properties/created_date",
+          "type": "string",
+          "title": "The created_date schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "2020-08-11T06:54:12.000Z"
+          ]
+        },
+        "isActive": {
+          "$id": "#/properties/isActive",
+          "type": "boolean",
+          "title": "The isActive schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  ]
+}

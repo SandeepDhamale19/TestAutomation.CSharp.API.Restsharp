@@ -1,0 +1,12 @@
+{
+  "TestData": [
+    {
+      "Url": "/Account/v1/Authorized",
+      "Verb": "post",
+      "Data": {
+        "userName": "Captain America",
+        "password": "MyP@ss123"
+      }
+    }
+  ]
+}

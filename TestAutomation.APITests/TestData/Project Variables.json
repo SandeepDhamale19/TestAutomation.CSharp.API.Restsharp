@@ -1,0 +1,52 @@
+﻿{
+  "Browser": "Chrome",
+  //Environment: qa/ rc/ iat
+  "Environment": "qa",
+  "ExecuteRemotely": "No",
+  "EnableDefectLogging": false,
+
+  "UpdateAzureTests": false, // Mark true only when require to execute automated scripts on Azure DevOps.
+  "ProjectTeamName": "Risk.Analytics", // "CFT", "AS.Projects"
+  "AzureTestPlanId": "14816", // Replace with Test Plan Id
+  "AzureTestSuiteId": "38730", // Replace with Suite Id
+
+  // Environments
+  // QA
+  "ApplicationURLAPITests": "",
+
+  //RC
+  "ApplicationURLAPITestsRC": "",
+
+  //IAT
+  "ApplicationURLAPITestsIAT": "",
+
+  // Prod
+  "ApplicationURLAPITestsPROD": "",
+
+  // Timeout
+  "DefaultTimeout": 30,
+
+  // API URLs
+  //QA - API
+  "ApiBaseUrlAPITests": "https://demoqa.com",
+
+  //RC - API
+  "ApiBaseUrlAPITestsRC": "",
+
+  //IAT - API
+  "ApiBaseUrlAPITestsIAT": "",
+
+  //PROD - API
+  "ApiBaseUrlAPITestsPROD": "",
+
+  //Auth URLs
+  "AuthURLAPITests": "/Account/v1/GenerateToken",
+
+  //API Resources
+  "ApiResourceUrl": "/Account/v1",
+
+  // Test User Credentials
+  "TestUserName": "Captain America",
+  "TestPassword": "MyP@ss123"
+
+}
