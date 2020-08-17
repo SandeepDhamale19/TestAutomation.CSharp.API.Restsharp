@@ -64,6 +64,9 @@
     <Reference Include="TechTalk.SpecFlow, Version=2.4.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
       <HintPath>..\packages\SpecFlow.2.4.1\lib\net45\TechTalk.SpecFlow.dll</HintPath>
     </Reference>
+    <Reference Include="TestAutomation.Framework, Version=1.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Test.Automation.Framework.1.0.0.6\lib\TestAutomation.Framework.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Features\Features_Functional\Features_Functional_API\Bookstore.feature.cs">
@@ -121,7 +124,6 @@
     <None Include="TestData\json-schema1.json" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="bin\Debug\" />
     <Folder Include="Features\Features_Functional\Features_Functional_UI\" />
     <Folder Include="Features\Features_Regression\Features_Regression_API\" />
     <Folder Include="Features\Features_Regression\Features_Regression_UI\" />
@@ -131,12 +133,6 @@
     <Folder Include="ObjectRepository\" />
     <Folder Include="Pages\Pages_UI\" />
     <Folder Include="StepDefinitions\StepDefinitions_UI\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TestAutomation.Framework\TestAutomation.Framework.csproj">
-      <Project>{a4583d68-60b2-4ece-add3-a7929b91a473}</Project>
-      <Name>TestAutomation.Framework</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,0 +1,80 @@
+Start test session: APITestsTestSuite
+
+Start test case: Add List of books, , Test collection: APITestsTestSuite
+Test case scope:
+
+Execute test step: Given  I add isbn for a book, 8/17/2020 6:39:41 PM
+Info: 8/17/2020 6:39:44 PM - Authenticated Successfully., as expected
+Info: 8/17/2020 6:39:44 PM - Request created for URL: /BookStore/v1/Books and method: post, as expected
+Execute test step: Then  book is added to my bookstore, 8/17/2020 6:39:44 PM
+Info: 8/17/2020 6:39:44 PM - Response recieved with status code Expected Value: '201', Actual Value: '201', as expected
+
+Start test case: Access books from bookstore app, , Test collection: APITestsTestSuite
+Test case scope:
+
+Execute test step: Given  I access books from bookstore with /BookStore/v1/Books, get and , 8/17/2020 6:39:44 PM
+Info: 8/17/2020 6:39:44 PM - Authenticated Successfully., as expected
+Info: 8/17/2020 6:39:44 PM - Request created for URL: /BookStore/v1/Books and method: get, as expected
+Execute test step: Then  I am provided with information about books, 8/17/2020 6:39:44 PM
+Info: 8/17/2020 6:39:44 PM - Response recieved with status code Expected Value: '200', Actual Value: '200', as expected
+
+Start test case: Add new user, , Test collection: APITestsTestSuite
+Test case scope:
+
+Execute test step: Given  I add new user details, 8/17/2020 6:39:44 PM
+Info: 8/17/2020 6:39:45 PM - Replaced key: 'Iron Man' by value: 'pywalomdvw', as expected
+Info: 8/17/2020 6:39:45 PM - Authenticated Successfully., as expected
+Info: 8/17/2020 6:39:45 PM - Request created for URL: /Account/v1/User and method: post, as expected
+Execute test step: Then  I am provided with user details, 8/17/2020 6:39:45 PM
+Info: 8/17/2020 6:39:45 PM - Response recieved with status code Expected Value: '201', Actual Value: '201', as expected
+Info: 8/17/2020 6:39:45 PM - Response Exists with contents userID: a641e12f-8c97-40c9-844d-2b9d104532fe, as expected
+Info: 8/17/2020 6:39:45 PM - Response Exists with contents username: pywalomdvw, as expected
+
+Start test case: Bookstore application authorization, , Test collection: APITestsTestSuite
+Test case scope:
+
+Execute test step: Given  I provide valid credentials, 8/17/2020 6:39:45 PM
+Info: 8/17/2020 6:39:45 PM - Authenticated Successfully., as expected
+Info: 8/17/2020 6:39:45 PM - Request created for URL: /Account/v1/Authorized and method: post, as expected
+Execute test step: Then  I am authorized to access bookstore application, 8/17/2020 6:39:45 PM
+Info: 8/17/2020 6:39:46 PM - Response recieved with status code Expected Value: '200', Actual Value: '200', as expected
+Info: 8/17/2020 6:39:46 PM - Response recieved with, Expected Value: 'true', Actual Value: 'true', as expected
+
+Start test case: Get user details, , Test collection: APITestsTestSuite
+Test case scope:
+
+Execute test step: Given  I add new user, 8/17/2020 6:39:46 PM
+Info: 8/17/2020 6:39:46 PM - Authenticated Successfully., as expected
+Info: 8/17/2020 6:39:46 PM - Request created for URL: /Account/v1/User and method: post, as expected
+Execute test step: Then  I am provided with user details, 8/17/2020 6:39:46 PM
+Info: 8/17/2020 6:39:47 PM - Response recieved with status code Expected Value: '201', Actual Value: '201', as expected
+Info: 8/17/2020 6:39:47 PM - Response Exists with contents userID: 41ade85b-543f-4768-a27f-9ebf22b12390, as expected
+Info: 8/17/2020 6:39:47 PM - Response Exists with contents username: opmiosdnpe, as expected
+Execute test step: When  I request for user details, 8/17/2020 6:39:47 PM
+Info: 8/17/2020 6:39:47 PM - Authenticated Successfully., as expected
+Info: 8/17/2020 6:39:47 PM - Request created for URL: /Account/v1/User/41ade85b-543f-4768-a27f-9ebf22b12390 and method: get, as expected
+Execute test step: Then  I am provided with requested user details, 8/17/2020 6:39:47 PM
+Info: 8/17/2020 6:39:48 PM - Response recieved with status code Expected Value: '200', Actual Value: '200', as expected
+Info: 8/17/2020 6:39:48 PM - Response Exists with contents userId: 41ade85b-543f-4768-a27f-9ebf22b12390, as expected
+Info: 8/17/2020 6:39:48 PM - Response Exists with contents username: opmiosdnpe, as expected
+
+Start test case: Login to bookstore application, , Test collection: APITestsTestSuite
+Test case scope:
+
+Execute test step: Given  I provide valid credentials, 8/17/2020 6:39:48 PM
+Info: 8/17/2020 6:39:49 PM - Authenticated Successfully., as expected
+Info: 8/17/2020 6:39:49 PM - Request created for URL: /Account/v1/Login and method: post, as expected
+Execute test step: Then  I am logged in to bookstore application, 8/17/2020 6:39:49 PM
+Info: 8/17/2020 6:39:49 PM - Response recieved with status code Expected Value: '200', Actual Value: '200', as expected
+Execute test step: And  I am provided with Username, UserId and token, 8/17/2020 6:39:49 PM
+Info: 8/17/2020 6:39:49 PM - Response recieved with status code Expected Value: '200', Actual Value: '200', as expected
+Info: 8/17/2020 6:39:49 PM - Response Exists with contents userId: cd9c1a56-8e57-4353-a9fe-2c56902342ba, as expected
+Info: 8/17/2020 6:39:49 PM - Response Exists with contents username: Captain America, as expected
+Info: 8/17/2020 6:39:49 PM - Response Exists with contents password: MyP@ss123, as expected
+Info: 8/17/2020 6:39:49 PM - Response Exists with contents token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IkNhcHRhaW4gQW1lcmljYSIsInBhc3N3b3JkIjoiTXlQQHNzMTIzIiwiaWF0IjoxNTk3NjY5Nzg4fQ.WykT1y0YeX3Y-ZNfxKckHC4c1tmUbtHFtH3wfHS2fV4, as expected
+Info: 8/17/2020 6:39:49 PM - Response Exists with contents expires: 8/24/2020 1:09:48 PM, as expected
+Info: 8/17/2020 6:39:49 PM - Response Exists with contents created_date: 8/11/2020 6:54:12 AM, as expected
+Info: 8/17/2020 6:39:49 PM - Response Exists with contents isActive: False, as expected
+Info: 8/17/2020 6:39:49 PM - Response schema validated for content: $, as expected
+Info: 8/17/2020 6:39:49 PM - Response recieved with, Expected Value: 'Captain America', Actual Value: 'Captain America', as expected
+Info: 8/17/2020 6:39:49 PM - Response recieved with, Expected Value: 'Captain America', contains , Actual Value: 'America', as expected
