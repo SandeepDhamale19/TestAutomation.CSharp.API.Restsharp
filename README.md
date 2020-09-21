@@ -1,4 +1,4 @@
-# <img src="https://github.com/SandeepDhamale1905/SandeepDhamaleProfile/blob/master/Logos/Api_small.png" alt="Selenium C# PDF"> Restsharp-C#-Specflow-API-Tests
+# <img src="https://github.com/SandeepDhamale1905/SandeepDhamaleProfile/blob/master/Logos/Api_small.png" alt="API C# Restsharp" width="60" height="60"> Restsharp-C#-Specflow-API-Tests
 API tests using Restsharp, C# and Specflow
 
 ### Usage
@@ -22,6 +22,7 @@ Install-Package Test.Automation.Framework -Version 1.0.0.5
 #### ▪ Serialization/ Deserialization
 #### ▪ Get Response Count
 #### ▪ Retrieve Response values by Key
+
 
 ### Interesting stuff: Scenario execution [HTML Reports](https://github.com/SandeepDhamale19/Restsharp-API-Tests/tree/master/TestAutomation.APITests/Results)
 ##### A. Test Suites: Summary [All passed]
