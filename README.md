@@ -1,4 +1,4 @@
-# <img src="https://github.com/SandeepDhamale1905/SandeepDhamaleProfile/blob/master/Logos/Api_small.png" alt="API C# Restsharp" width="60" height="60"> Restsharp-C#-Specflow-API-Tests
+# <img src="https://github.com/SandeepDhamale1905/SandeepDhamaleProfile/blob/master/Logos/Api_small_1.png" alt="API C# Restsharp" width="60" height="60"> Restsharp-C#-Specflow-API-Tests
 API tests using Restsharp, C# and Specflow
 
 ### Usage
